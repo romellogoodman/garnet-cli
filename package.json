@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "dev": "parcel src/dev.html",
     "build": "parcel build src/app.js --out-file app.js",
-    "cli": "node src/cli.js"
+    "cli": "node src/cli.js",
+    "dev": "parcel src/dev.html",
+    "prepublishOnly": "npm run build"
   },
   "bin": {
     "garnet": "src/cli.js"
